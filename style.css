@@ -1,0 +1,58 @@
+.tarjeta {
+  width: 600px;
+  height: auto;
+  margin: 10% 35%;
+  box-shadow: 0 19px 38px rgba(7, 66, 100, 0.3), 0 15px 12px rgba(0,0,0,0.22);
+  padding: 1% 2%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  color: rgb(160, 151, 151);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.izq {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;  
+}
+
+.icono {
+  width: 90px;
+  height: auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grados {
+  font-size: 60px;
+  font-weight: 800;
+   color: black;
+}
+
+span {
+  font-size: 15px;
+  color: black;
+}
+
+.viento {
+padding-bottom: 8%;
+}
+h2{
+  font-size: 50 px;
+  margin: 0;
+}
+h3{
+  font-size: 20px;
+  margin: 0;
+}

@@ -7,7 +7,7 @@ form.onsubmit = (e) => {
 
 
 
-  fetch(`http://api.openweathermap.org/data/2.5/weather?q=${buscarCiudad}&units=metric&lang=es&appid=9f39cdba4d4a89d545134347942f077d`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${buscarCiudad}&units=metric&lang=es&appid=9f39cdba4d4a89d545134347942f077d`)
     .then(res => res.json())
     .then(info => {
       console.log(info);
@@ -18,7 +18,7 @@ form.onsubmit = (e) => {
       const temp = info.main.temp;
       const hum = info.main.humidity;
       const viento = info.wind.speed;
-      console.log(viento);
+      
 
       tarjeta.innerHTML = `
     <div class="izq">
@@ -27,7 +27,7 @@ form.onsubmit = (e) => {
         <h3>${clima}</h3>
       </div>
       <div class="temp">
-        <div class="icono"><img src="http://openweathermap.org/img/wn/${icono}.png"></div>
+        <div class="icono"><img src="https://openweathermap.org/img/wn/${icono}.png"></div>
         <div class="grados">${temp} <span>ºC</span></div>
       </div>
     </div>
@@ -38,7 +38,7 @@ form.onsubmit = (e) => {
       </div>
     </div>
     
-  `
+  `;
+  tarjeta.classList.remove("nomostrar")
     })
-
-}
+  }

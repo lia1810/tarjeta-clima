@@ -1,7 +1,7 @@
 .tarjeta {
   width: 600px;
   height: auto;
-  margin: 5% 20%;
+  margin: 5%;
   padding: 1% 2%;
   display: flex;
   justify-content: space-around;
@@ -10,6 +10,14 @@
   border: 1px solid rgb(141, 133, 133);
   border-radius: 10px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@media (max-width: 600px) {
+ 
+  .tarjeta {
+    width: 150px;
+    height: auto;
+    margin: 5px;
+  }
 }
 .nomostrar{
   display: none;
